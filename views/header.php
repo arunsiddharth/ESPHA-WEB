@@ -24,8 +24,16 @@
         <script src="/js/scripts.js"></script>
 
     </head>
+    <?php
+        if (!in_array($_SERVER["PHP_SELF"], ["/wstation.php"])){
+        echo '<body background="img/bkg.jpg" style="background-size:100%">';
+        }
+        else{
+        echo '<body background="img/bkg.jpg" style="background-size:100%" onload="javascript:search('."'Jaipur'".');">';
+        }
+    ?>
 
-    <body background="img/bkg.jpg" style="background-size:100%">
+    
 
         <div class="container">
 
