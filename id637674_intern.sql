@@ -2,8 +2,8 @@
 -- version 4.6.6
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Feb 03, 2017 at 02:02 PM
+-- Host: localhost
+-- Generation Time: Jun 11, 2017 at 06:41 AM
 -- Server version: 10.1.20-MariaDB
 -- PHP Version: 7.0.8
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `id637674_intern`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `status`
+--
+
+CREATE TABLE `status` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `rgb` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'OFF',
+  `balarm` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'OFF',
+  `ADDITIONAL` varchar(10) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `status`
+--
+
+INSERT INTO `status` (`id`, `rgb`, `balarm`, `ADDITIONAL`) VALUES
+(1, 'ON', 'ON', 'OFF');
 
 -- --------------------------------------------------------
 
@@ -54,11 +74,26 @@ INSERT INTO `users` (`id`, `oauth_provider`, `oauth_uid`, `name`, `email`, `pass
 (25, '', '', 'kapil', 'kapilgahlothyhy@gmail.com', '$2y$10$MM8odLHqHO9Z2q98GxKxbug9LgTs3URH7h77BiU44/TORi5UROdM2'),
 (26, '', '', 'parag', '1997parag.goyal@gmail.com', '$2y$10$8KfM3yGVhWNCY9roPt175.yx78L51HRaqW/OUVu1pFekxiNIhwhCi'),
 (27, 'Google', '110800545116279062390', 'PRASOON SINGH', '2016umt1556@mnit.ac.in', ''),
-(28, 'Google', '112242673325414980496', 'Arun Siddharth', '2015uec1283@mnit.ac.in', '');
+(28, 'Google', '112242673325414980496', 'Arun Siddharth', '2015uec1283@mnit.ac.in', ''),
+(29, '', '', 'Mata Rani', 'a@god.com', '$2y$10$BrJPqvjbzXbOR82PAujhs.amZjIXMt3EvlFHd2BG7c5z4Ya7VNkZS'),
+(30, '', '', 'ARUN', 'admin@espha.in', '$2y$10$kUYFPKcv4K6h.A5lJnLZgeSvpoLd0KgNVraA2CTSUSTg3fISL9i0a'),
+(31, '', '', 'Ashwani Kumar', 'ashwani.kumar10@esic.in', '$2y$10$SwyvYrr2tMfFJ4Ez2jlimuMeY0TkVnrHmuSGMD6e0QlnQB/Pinesy'),
+(32, 'Google', '113144288840420603941', 'SHREYA JAIN', 'jainsjain45@gmail.com', ''),
+(33, 'Google', '108731889304363111571', 'Mnit Cse', 'mnitcse1418@gmail.com', ''),
+(34, 'Google', '117889619549905928335', 'Xecon Ankit', 'ankit.xecon4@gmail.com', ''),
+(35, 'Google', '104313311189555273341', 'vaibhav bharti', 'vaibhavbharti34@gmail.com', ''),
+(36, '', '', 'Arun Siddharth', 'arun@espha.in', '$2y$10$cqKRcLl5Xfspd43f3SblFOVfK46kEQVXYQ75DlIIMd.f9u9UVJ.L6'),
+(37, '', '', 'Manpreet Kaur', 'manpreet@espha', '$2y$10$hxEBes4m1ISKbzjaegWF2e4LN.K8ZbOvUzMi9PMIreROTWn/Uwu8a');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -73,10 +108,15 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `status`
+--
+ALTER TABLE `status`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -14,6 +14,9 @@
                         $_POST["hrs"]=(int)$_POST["hrs"];
                         $_POST["mins"]=60*(int)$_POST["hrs"]+(int)$_POST["mins"];
 			}
+                        $conn=dbconnect();
+                        $query="UPDATE status set balarm='ON' WHERE id=1";
+                        $conn->query($query);
 			$my_file="../storage/bLog.txt";
 			$fp=fopen($my_file,"w") or die('Cannot open file:  '.$my_file);
 			$data='<div><b>'.$_POST["state"].'</b>'.'<b>'.$_POST["mins"].'</b>';

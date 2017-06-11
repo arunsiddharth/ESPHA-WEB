@@ -59,6 +59,7 @@
                         
                         <li><a href="index.php"><strong>HOME</strong></a></li>
                         <li><a href="rgb.php">RGB LED</a></li>
+                        <li><a href="iot.php">LABOUR</a></li>
                         <li><a href="wstation.php">WEATHER STATION</a></li>
                         <li><a href="bAlarm.php">BURGLAR ALARM</a></li>
 						<li>
@@ -75,7 +76,8 @@
 						} 
 						?>
 						</li>
-                        <li><a href="https://www.google.com" target="_blank">GOOGLE</a></li>
+                        <li><a href="sensor.php">SENSOR STATUS</a></li>
+                        <!--<li><a href="https://www.google.com" target="_blank">GOOGLE</a></li>-->
                         <!--<li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>-->
                         <li><a href="https://www.linkedin.com/in/arun-siddharth-a5709a123/" target="_blank">ABOUT CREATOR</a></li>
                         <li><a href="logout.php"><strong>LOG OUT</strong></a></li>
